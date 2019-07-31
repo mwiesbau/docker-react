@@ -7,4 +7,4 @@ before_install:
 
 
 script:
-  - docker container run mwiesbau/docker-react npm run test -- --coverage
+  - docker container run -e CI=true mwiesbau/docker-react npm run test -- --coverage
